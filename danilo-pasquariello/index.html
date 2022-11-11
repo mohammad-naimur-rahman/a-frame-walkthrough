@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Frame</title>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <!-- HTML Primitives -->
+    <a-box color="#689f38" width="1" height="2" depth="0.5" position="0 2 -3">
+      <!-- Child Entity -->
+      <a-circle color="#f0f009" side="double" position="0 0 0.1"></a-circle>
+    </a-box>
+    <a-cylinder color="#333" height="2" radius="2" segments-radial="50" open-ended="true" side="double"
+      position="0 3 -5"></a-cylinder>
+  </a-scene>
+</body>
+
+</html>
