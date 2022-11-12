@@ -12,12 +12,21 @@
 <body>
   <a-scene>
     <!-- HTML Primitives -->
-    <a-box color="#689f38" width="1" height="2" depth="0.5" position="0 2 -3" rotation="0 20 30" scale="1 1 2">
-      <!-- Child Entity -->
-      <a-circle color="#f0f009" side="double" position="0 0 0.1" scale="1 1 2"></a-circle>
+    <!-- <a-box color="#689f38" width="1" height="2" depth="0.5" position="0 2 -3" rotation="0 20 30" scale="1 1 2"> -->
+    <!-- Child Entity -->
+    <!-- <a-circle color="#f0f009" side="double" position="0 0 0.1" scale="1 1 2"></a-circle>
     </a-box>
     <a-cylinder color="#333" height="2" radius="2" segments-radial="50" open-ended="true" side="double"
-      position="0 2 -5" rotation="90 0 0"></a-cylinder>
+      position="0 2 -5" rotation="90 0 0"></a-cylinder> -->
+
+    <!-- Image Textures and materials -->
+    <a-assets>
+      <img src="/assets/one.jpg" id="one">
+      <img src="/assets/two.jpg" id="two">
+    </a-assets>
+    <a-box color="#8eacbb" width="4" height="4" depth="4" position="-2 1.5 -9" normal-map="#one" normal-scale="3 1">
+    </a-box>
+    <a-box color="#795548" width="4" height="4" depth="4" position="2 1.5 -9" src="#two"></a-box>
   </a-scene>
 </body>
 
